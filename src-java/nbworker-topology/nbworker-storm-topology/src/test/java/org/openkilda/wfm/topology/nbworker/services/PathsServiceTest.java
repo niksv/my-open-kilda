@@ -339,7 +339,7 @@ public class PathsServiceTest extends InMemoryGraphBasedTest {
 
     private void assertPathLength(List<PathsInfoData> paths) {
         for (PathsInfoData path : paths) {
-            assertEquals(3, path.getPath().getNodes().size());
+            assertEquals(4, path.getPath().getNodes().size());
             assertEquals(SWITCH_ID_1, path.getPath().getNodes().get(0).getSwitchId());
             assertEquals(SWITCH_ID_2, path.getPath().getNodes().get(2).getSwitchId());
         }
